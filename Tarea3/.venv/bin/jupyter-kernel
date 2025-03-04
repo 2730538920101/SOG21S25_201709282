@@ -1,8 +1,0 @@
-#!/Volumes/Mac-mini-data/Mac-mini/Documents/USAC/Clases/gerenciales2/SOG21S25_201709282/Tarea3/.venv/bin/python
-# -*- coding: utf-8 -*-
-import re
-import sys
-from jupyter_client.kernelapp import main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
