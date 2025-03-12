@@ -1,0 +1,15 @@
+variable "AWS_ACCESS_KEY" {}
+variable "AWS_SECRET_KEY" {}
+variable "AWS_REGION" {}
+variable "PracticaSOG_vpc_cidr" {}
+variable "public1" {}
+variable "private1" {}
+variable "public2" {}
+variable "private2" {}
+variable "user_ssh" {}
+variable "PATH_KEYPAIR" {}
+variable "PATH_PUBLIC_KEYPAIR" {}
+variable "DATABASE_PASSWORD" {}
+variable "DATABASE_USER" {}
+variable "DATABASE_NAME" {}
+variable "SQL_FILE_PATH" {}

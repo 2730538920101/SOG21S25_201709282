@@ -1,0 +1,34 @@
+services:
+    # Servicio de la aplicación de ETL
+    etl:
+        platform: linux/amd64
+        image: carlosmz87/practica_sog_etl:latest
+        container_name: practica_sog_etl_container
+        networks:
+            - practicaSOG_network
+        ports:
+            - "8000:${ETL_PORT}"
+        restart: always
+        env_file:
+            - .env.prod
+
+    # Servicio de la aplicación de Jupyter
+    jupyter:
+        platform: linux/amd64
+        image: carlosmz87/practica_sog_jupyter:latest
+        container_name: practica_sog_jupyter_container
+        networks:
+            - practicaSOG_network
+        ports:
+            - "8888:${JUPYTER_PORT}"
+        depends_on:
+            - etl
+        restart: always
+        env_file:
+            - .env.prod
+
+
+networks:
+  practicaSOG_network:
+    driver: bridge 
+    

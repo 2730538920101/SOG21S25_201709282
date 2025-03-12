@@ -1,0 +1,63 @@
+services:
+
+    # Servicio de la base de datos
+    database:
+        platform: linux/amd64
+        build:
+            context: ./database
+            dockerfile: Dockerfile
+        image: carlosmz87/practica_sog_database:latest
+        container_name: practica_sog_database_container
+        volumes:
+            - practica_sog_data:/var/lib/mysql
+        networks:
+            - practicaSOG_network
+        ports:
+            - "3306:${DATABASE_PORT}"
+        env_file:
+            - .env
+
+    # Servicio de la aplicación de ETL
+    etl:
+        platform: linux/amd64
+        build:
+            context: ./etl
+            dockerfile: Dockerfile
+        image: carlosmz87/practica_sog_etl:latest
+        container_name: practica_sog_etl_container
+        networks:
+            - practicaSOG_network
+        ports:
+            - "8000:${ETL_PORT}"
+        depends_on:
+            - database
+        restart: always
+        env_file:
+            - .env
+
+    # Servicio de la aplicación de Jupyter
+    jupyter:
+        platform: linux/amd64
+        build:
+            context: ./insights
+            dockerfile: Dockerfile
+        image: carlosmz87/practica_sog_jupyter:latest
+        container_name: practica_sog_jupyter_container
+        networks:
+            - practicaSOG_network
+        ports:
+            - "8888:${JUPYTER_PORT}"
+        depends_on:
+            - database
+            - etl
+        restart: always
+        env_file:
+            - .env
+  
+volumes:
+  practica_sog_data:
+
+networks:
+  practicaSOG_network:
+    driver: bridge 
+    
