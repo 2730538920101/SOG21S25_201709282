@@ -1,0 +1,24 @@
+services:
+
+  # Servicio para la base de datos
+  database:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: carlosmz87/proyecto_sog_database:latest
+    container_name: proyecto_sog_database_container
+    volumes:
+      - proyecto_sog_data:/var/lib/mysql
+    networks:
+      - practicaSOG_network
+    ports:
+      - "3306:${DATABASE_PORT}"
+    env_file:
+      - .env
+  
+volumes:
+  proyecto_sog_data:
+
+networks:
+  proyectoSOG__network:
+    driver: bridge
