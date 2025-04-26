@@ -10,7 +10,7 @@ services:
     volumes:
       - proyecto_sog_data:/var/lib/mysql
     networks:
-      - practicaSOG_network
+      - proyectoSOG_network
     ports:
       - "3306:${DATABASE_PORT}"
     env_file:
@@ -20,5 +20,5 @@ volumes:
   proyecto_sog_data:
 
 networks:
-  proyectoSOG__network:
+  proyectoSOG_network:
     driver: bridge
