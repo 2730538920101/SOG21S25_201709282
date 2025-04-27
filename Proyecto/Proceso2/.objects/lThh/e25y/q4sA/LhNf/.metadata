@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Máx (USD)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "LhNf1DcXqEuuzZ2gP_Lj_A",
+  "Reference": "3vof5J1yv0yhjbVK4oVBDw/LhNf1DcXqEuuzZ2gP_Lj_A",
+  "ParentRef": "3vof5J1yv0yhjbVK4oVBDw/q4sAglgZe0KVtTp8JB03aQ",
+  "Created": "2025-04-27T13:24:30.4189395Z",
+  "Updated": "2025-04-27T13:24:30.4189395Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

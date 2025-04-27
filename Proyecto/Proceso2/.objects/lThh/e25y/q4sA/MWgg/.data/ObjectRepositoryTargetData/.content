@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GfdKke8A3k29ceFxQ40dYw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="edb31798-eb21-4407-bc38-f8ce9a3c4f59" CvElementArea="867, 413, 130, 53" CvType="InputBox" DesignTimeRectangle="880, 431, 103, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='priceFrom' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger ng-tns-c67-8 ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' placeholder='De' aaname='Mín (USD) ' /&gt;" Guid="c8541347-8417-49f8-85e0-9e671d7c1ff4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="edb31798-eb21-4407-bc38-f8ce9a3c4f59" CvTextArea="867, 392, 63, 15" CvTextArgument="Mín (USD)" CvType="Text" DesignTimeRectangle="868, 391, 64, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='aggregatedPriceSelector-panel' tag='LABEL' type='' class='mat-small' aaname='' check:innerText='Mín (USD)' /&gt;" Guid="dd3b8935-88cd-4a41-a509-054d3c224bde" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c377d2ba79e0036f4574375911008c2f.png" xmlns="">0PtfZn8e9YkuLmdf10dy9Aw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RydrDp44V0iihNjL0jZ7zg" Reference="3vof5J1yv0yhjbVK4oVBDw/FVrjkPoiK0eawyoU3XI_xA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.century21global.com/es/l/land-for-sale/usa?max=10&amp;priceTo=800000&amp;sort=PRICE&amp;order=DESC" ContentHash="Uek3OifbUUayzuwfAJS2CA" DesignTimeRectangle="301, -800, 1320, 1640" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;site-root&amp;gt;site-master&amp;gt;xo-builder-listing-search-page&amp;gt;site-master-page&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;xo-builder-listing-search-result&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="c103f285-40f6-4d81-ace6-fff1c481c9c1" Reference="3vof5J1yv0yhjbVK4oVBDw/FVrjkPoiK0eawyoU3XI_xA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6be05e4475515f576863e44675408436.png" xmlns="">0v9SxZ0pxo0egxm-yxGQWfw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Precio'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Ubicacion'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Direccion'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Titulo'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="def9708c-f940-436b-863b-447fcb2ad2ed" CvElementArea="1578, 624, 21, 23" CvType="ArrowButton" DesignTimeRectangle="1577, 623, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='  ' css-selector='body&amp;gt;site-root&amp;gt;site-master&amp;gt;xo-builder-listing-search-page&amp;gt;site-master-page&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;xo-builder-listing-search-result&amp;gt;xo-builder-custom-paginator&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;mat-icon&amp;gt;svg' idx='4' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  ' type='' class='' tag='svg' /&gt;" Guid="ba091fd7-6169-40dc-ba93-345400b54808" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

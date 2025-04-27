@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TpJdlEF6t0GbSrnnzZzsAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="century21global.com/es/l/land-for-sale" CVScreenId="1de2dc4b-3b16-4727-85b9-bb91a4f26de3" CvTextArea="312, 542, 344, 22" CvTextArgument="Bienes Raíces Y Tierras En Venta" CvType="Text" DesignTimeRectangle="313, 538, 1296, 32" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='mat-h1 my-4 fw-semibold ng-star-inserted' aaname='Bienes raíces y           Tierras           en Venta         ' check:innerText='Bienes Raíces Y Tierras En Venta' /&gt;" Guid="e0e744d7-66fb-4239-9f17-21df61da3cab" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="395eb48ad3d80bf907523ec571cf980a.png" xmlns="">0_HsHl7S-SU2D2EeR4NgsPw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
