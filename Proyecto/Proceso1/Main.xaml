@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -237,7 +237,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="ahora necesito que podamos identificar en los archivos si el archivo en su nombre contiene la palabra clientes o proveedores para poder diferenciar a que tabla pertenecen los datos leidos en el excel" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1556,1895" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="ahora necesito que podamos identificar en los archivos si el archivo en su nombre contiene la palabra clientes o proveedores para poder diferenciar a que tabla pertenecen los datos leidos en el excel" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1556,4623" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="csvExists" />
       <Variable x:TypeArguments="sd:DataTable" Name="csvDataTable" />
@@ -252,91 +252,322 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="572,1841" sap2010:WorkflowViewState.IdRef="Sequence_24">
+    <Sequence DisplayName="Proveedores" sap:VirtualizedContainerService.HintSize="664,2289" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:String[]" Name="DirectorioArray" />
+        <Variable x:TypeArguments="s:String[]" Name="ArchivoArray" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachFileX DisplayName="Por cada archivo en la carpeta" Filter=".xlsx" Folder="C:\Users\OMEN\Documents\Gerenciales2\SOG21S25_201709282\Proyecto\Venta" sap:VirtualizedContainerService.HintSize="538,1758" sap2010:WorkflowViewState.IdRef="ForEachFileX_3" IncludeSubDirectories="True" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
-        <ui:ForEachFileX.Body>
-          <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
-            <ActivityAction.Argument1>
-              <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
-            </ActivityAction.Argument1>
-            <ActivityAction.Argument2>
-              <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
-            </ActivityAction.Argument2>
-            <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="504,1471" sap2010:WorkflowViewState.IdRef="Sequence_19">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[CurrentFile.Name.ToLower().Contains(&quot;clientes&quot;)]" DisplayName="Si el nombre del archivo contiene ''clientes''" sap:VirtualizedContainerService.HintSize="470,710" sap2010:WorkflowViewState.IdRef="If_4">
-                <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,481" sap2010:WorkflowViewState.IdRef="Sequence_20">
+      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="630,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[DirectorioArray]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories("C:\Users\OMEN\Documents\Gerenciales2\SOG21S25_201709282\Proyecto\Venta", "proveedores*")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[DirectorioArray.Count &gt;0]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="630,2083" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="628,1929" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="594,1869" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[DirectorioArray]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,1748" sap2010:WorkflowViewState.IdRef="Sequence_30">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[excelData]" DisplayName="Leer datos del archivo de Excel" sap:VirtualizedContainerService.HintSize="434,120" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="Hoja1" WorkbookPath="[CurrentFile.FullName]" />
-                    <Assign DisplayName="Asignar datos a la tabla ''clientes''" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_3">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="sd:DataTable">[storedData]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="sd:DataTable">[excelData]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" ConnectionString="Dsn=RPA_Connection_Project;uid=UserVentas;pwd=User1234!" DataTable="[storedData]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="InsertDataTable_2" ProviderName="System.Data.Odbc" TableName="clientes" />
+                    <Sequence DisplayName="Captura Proveedores" sap:VirtualizedContainerService.HintSize="558,1688" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="s:String[]" Name="ClientesArray" />
+                        <Variable x:TypeArguments="s:String[]" Name="ProveedoresArray" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="524,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:String[]">[ProveedoresArray]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories(item, "proveedores*")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each archivo" sap:VirtualizedContainerService.HintSize="524,1491" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[ProveedoresArray]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="archivo" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,1370" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence DisplayName="Capturar Archivos" sap:VirtualizedContainerService.HintSize="488,1310" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="s:String[]">[ArchivoArray]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(archivo,"proveedores*.xlsx")]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <If Condition="[ArchivoArray.Count &gt;0]" sap:VirtualizedContainerService.HintSize="454,1113" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,816" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="418,756" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[ArchivoArray]">
+                                        <ui:ForEach.Body>
+                                          <ActivityAction x:TypeArguments="x:String">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,635" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
+                                                <Variable x:TypeArguments="ui:DatabaseConnection" Name="Conexion" />
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[item]" />
+                                              <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[DataTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="382,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Hoja1" WorkbookPath="[item]">
+                                                <ui:ReadRange.Range>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <Literal x:TypeArguments="x:String" Value="" />
+                                                  </InArgument>
+                                                </ui:ReadRange.Range>
+                                              </ui:ReadRange>
+                                              <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="382,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=RPA_Connection_Project;uid=UserVentas;pwd=User1234!" DatabaseConnection="[Conexion]" />
+                                              <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" DataTable="[DataTable]" DisplayName="Insert" ExistingDbConnection="[Conexion]" sap:VirtualizedContainerService.HintSize="382,193" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" TableName="proveedores" />
+                                              <ui:DatabaseDisconnect DatabaseConnection="[Conexion]" DisplayName="Disconnect from Database" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ui:ForEach.Body>
+                                      </ui:ForEach>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,168" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="418,108" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;No Existen archivos xls&quot;]" />
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
                   </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="628,25" sap2010:WorkflowViewState.IdRef="Sequence_29">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="594,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;No existen directorios&quot;]" />
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence DisplayName="Clientes" sap:VirtualizedContainerService.HintSize="664,2280" sap2010:WorkflowViewState.IdRef="Sequence_35">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:String[]" Name="DirectorioArray" />
+        <Variable x:TypeArguments="s:String[]" Name="ArchivoArray" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="630,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[DirectorioArray]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories("C:\Users\OMEN\Documents\Gerenciales2\SOG21S25_201709282\Proyecto\Venta", "clientes*")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[DirectorioArray.Count &gt;0]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="630,2083" sap2010:WorkflowViewState.IdRef="If_3">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="628,1929" sap2010:WorkflowViewState.IdRef="Sequence_38">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="594,1869" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[DirectorioArray]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,1748" sap2010:WorkflowViewState.IdRef="Sequence_40">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Captura Clientes" sap:VirtualizedContainerService.HintSize="558,1688" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="s:String[]" Name="ClientesArray" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="524,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:String[]">[ClientesArray]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories(item, "clientes*")]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each archivo" sap:VirtualizedContainerService.HintSize="524,1491" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[ClientesArray]">
+                        <ui:ForEach.Body>
+                          <ActivityAction x:TypeArguments="x:String">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:String" Name="archivo" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,1370" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence DisplayName="Capturar Archivos" sap:VirtualizedContainerService.HintSize="488,1310" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="454,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="s:String[]">[ArchivoArray]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(archivo,"clientes*.xlsx")]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <If Condition="[ArchivoArray.Count &gt;0]" sap:VirtualizedContainerService.HintSize="454,1113" sap2010:WorkflowViewState.IdRef="If_4">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,816" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="418,756" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[ArchivoArray]">
+                                        <ui:ForEach.Body>
+                                          <ActivityAction x:TypeArguments="x:String">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,635" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
+                                                <Variable x:TypeArguments="ui:DatabaseConnection" Name="Conexion" />
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[item]" />
+                                              <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[DataTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="382,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Hoja1" WorkbookPath="[item]">
+                                                <ui:ReadRange.Range>
+                                                  <InArgument x:TypeArguments="x:String">
+                                                    <Literal x:TypeArguments="x:String" Value="" />
+                                                  </InArgument>
+                                                </ui:ReadRange.Range>
+                                              </ui:ReadRange>
+                                              <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="382,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_2" ProviderName="System.Data.Odbc" ConnectionString="Dsn=RPA_Connection_Project;uid=UserVentas;pwd=User1234!" DatabaseConnection="[Conexion]" />
+                                              <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" DataTable="[DataTable]" DisplayName="Insert" ExistingDbConnection="[Conexion]" sap:VirtualizedContainerService.HintSize="382,193" sap2010:WorkflowViewState.IdRef="InsertDataTable_2" TableName="clientes" />
+                                              <ui:DatabaseDisconnect DatabaseConnection="[Conexion]" DisplayName="Disconnect from Database" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_2" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ui:ForEach.Body>
+                                      </ui:ForEach>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,168" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="418,108" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;No Existen archivos xls&quot;]" />
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEach.Body>
+                      </ui:ForEach>
+                    </Sequence>
                   </Sequence>
-                </If.Else>
-              </If>
-              <If Condition="[CurrentFile.Name.ToLower().Contains(&quot;proveedores&quot;)]" DisplayName="De lo contrario, si el nombre del archivo contiene ''proveedores''" sap:VirtualizedContainerService.HintSize="470,701" sap2010:WorkflowViewState.IdRef="If_5">
-                <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,481" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[excelData]" DisplayName="Leer datos del archivo de Excel" sap:VirtualizedContainerService.HintSize="434,120" sap2010:WorkflowViewState.IdRef="ReadRange_7" SheetName="Hoja1" WorkbookPath="[CurrentFile.FullName]" />
-                    <Assign DisplayName="Asignar datos a la tabla ''proveedores''" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_4">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="sd:DataTable">[storedData]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="sd:DataTable">[excelData]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:InsertDataTable AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" ConnectionString="Dsn=RPA_Connection_Project;uid=UserVentas;pwd=User1234!" DataTable="[storedData]" DisplayName="Insert" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="InsertDataTable_3" ProviderName="System.Data.Odbc" TableName="proveedores" />
-                  </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,90" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Sequence>
-                </If.Else>
-              </If>
-            </Sequence>
-          </ActivityAction>
-        </ui:ForEachFileX.Body>
-      </ui:ForEachFileX>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="628,25" sap2010:WorkflowViewState.IdRef="Sequence_39">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="594,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;No existen directorios&quot;]" />
+          </Sequence>
+        </If.Else>
+      </If>
     </Sequence>
   </Sequence>
 </Activity>
