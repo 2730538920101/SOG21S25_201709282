@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Estados Unidos Bienes R…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "0LnCeNT4LUSzz73HDrYA4g",
+  "Reference": "3vof5J1yv0yhjbVK4oVBDw/0LnCeNT4LUSzz73HDrYA4g",
+  "ParentRef": "3vof5J1yv0yhjbVK4oVBDw/q4sAglgZe0KVtTp8JB03aQ",
+  "Created": "2025-04-27T13:41:48.0265013Z",
+  "Updated": "2025-04-27T13:41:48.0265013Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

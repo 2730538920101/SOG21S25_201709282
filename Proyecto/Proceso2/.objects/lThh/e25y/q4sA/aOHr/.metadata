@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Etiqueta 'Bienes raíces y Tierras…'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "aOHrV-4_eU6osB7ZaE5nMQ",
+  "Reference": "3vof5J1yv0yhjbVK4oVBDw/aOHrV-4_eU6osB7ZaE5nMQ",
+  "ParentRef": "3vof5J1yv0yhjbVK4oVBDw/q4sAglgZe0KVtTp8JB03aQ",
+  "Created": "2025-04-27T13:31:14.6193964Z",
+  "Updated": "2025-04-27T13:31:14.6193964Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.2.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

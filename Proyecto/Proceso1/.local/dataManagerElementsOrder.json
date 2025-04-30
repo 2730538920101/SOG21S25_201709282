@@ -1,0 +1,38 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ProveedoresArray&Sequence_26",
+        "DirectorioArray&Sequence_35",
+        "ArchivoArray&Sequence_35",
+        "ClientesArray&Sequence_36",
+        "DataTable&Sequence_37",
+        "Conexion&Sequence_37",
+        "DirectorioArray&Sequence_25",
+        "ArchivoArray&Sequence_25",
+        "ClientesArray&Sequence_26",
+        "DataTable&Sequence_27",
+        "Conexion&Sequence_27",
+        "csvExists&Sequence_1",
+        "csvDataTable&Sequence_1",
+        "xlsxExists&Sequence_1",
+        "excelData&Sequence_1",
+        "extractedData&Sequence_1",
+        "storedData&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

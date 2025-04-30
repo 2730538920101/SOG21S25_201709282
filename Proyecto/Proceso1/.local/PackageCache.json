@@ -2,6 +2,49 @@
   "Packages": [
     {
       "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.24.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\closedxml\\0.100.3\\lib/netstandard2.0/ClosedXML.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\csvhelper\\16.0.0\\lib/netstandard2.1/CsvHelper.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/netstandard2.0/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/netstandard2.0/ExcelNumberFormat.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/netstandard1.6/Irony.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.OOXML.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/net6.0/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib/netcoreapp3.1/SixLabors.Fonts.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.API.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.ViewModels.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/OFFICE.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.platform\\24.12.3\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\xlparser\\1.5.2\\lib/netstandard1.6/XLParser.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4"
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "25.2.4"
       },
@@ -18,7 +61,7 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
@@ -54,11 +97,11 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250124.2\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.componentmodel.composition\\6.0.0\\lib/net6.0/System.ComponentModel.Composition.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.componentmodel.composition.registration\\6.0.0\\lib/net6.0/System.ComponentModel.Composition.Registration.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\6.0.1\\runtimes/win/lib/net6.0/System.Data.Odbc.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\6.0.0\\runtimes/win/lib/net6.0/System.Data.OleDb.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\7.0.0\\runtimes/win/lib/net7.0/System.Data.Odbc.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\7.0.0\\runtimes/win/lib/net7.0/System.Data.OleDb.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.accountmanagement\\6.0.0\\runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2\\runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\8.0.0\\runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.io.pipelines\\6.0.3\\lib/net6.0/System.IO.Pipelines.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.io.ports\\6.0.0\\runtimes/win/lib/net6.0/System.IO.Ports.dll",
@@ -67,7 +110,7 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\system.net.http.winhttphandler\\6.0.1\\runtimes/win/lib/net6.0/System.Net.Http.WinHttpHandler.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.private.servicemodel\\4.9.0\\lib/netstandard2.0/System.Private.ServiceModel.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.reflection.context\\6.0.0\\lib/net6.0/System.Reflection.Context.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\8.0.0\\runtimes/win/lib/net8.0/System.Runtime.Caching.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.servicemodel.duplex\\4.9.0\\lib/net6.0/System.ServiceModel.Duplex.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.servicemodel.http\\4.9.0\\lib/net6.0/System.ServiceModel.Http.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\system.servicemodel.nettcp\\4.9.0\\lib/net6.0/System.ServiceModel.NetTcp.dll",
@@ -93,50 +136,111 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Excel.Activities",
-        "Version": "2.24.4"
+        "Id": "UiPath.Database.Activities",
+        "Version": "1.10.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\closedxml\\0.100.3\\lib/netstandard2.0/ClosedXML.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\csvhelper\\16.0.0\\lib/netstandard2.1/CsvHelper.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/netstandard2.0/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/netstandard2.0/ExcelNumberFormat.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/netstandard1.6/Irony.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.OOXML.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\sharpziplib\\1.4.2\\lib/net6.0/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta18\\lib/netcoreapp3.1/SixLabors.Fonts.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.API.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Package.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.Activities.ViewModels.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib/net6.0-windows7.0/UiPath.Excel.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.PowerPoint.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/OFFICE.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.3.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.platform\\24.12.3\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\xlparser\\1.5.2\\lib/netstandard1.6/XLParser.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\azure.core\\1.44.1\\lib/net6.0/Azure.Core.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\azure.identity\\1.13.1\\lib/netstandard2.0/Azure.Identity.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\runtimes/win/lib/net8.0/Microsoft.Data.SqlClient.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identity.client\\4.66.1\\lib/net6.0/Microsoft.Identity.Client.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.66.1\\lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0\\lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0\\lib/net6.0/Microsoft.IdentityModel.Logging.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\lib/net6.0/Microsoft.IdentityModel.Protocols.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0\\lib/net6.0/Microsoft.IdentityModel.Tokens.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\lib/netstandard2.0/Microsoft.SqlServer.Server.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\oracle.manageddataaccess.core\\23.5.0\\lib/netstandard2.1/Oracle.ManagedDataAccess.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250124.2\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.clientmodel\\1.1.0\\lib/net6.0/System.ClientModel.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\7.0.0\\runtimes/win/lib/net7.0/System.Data.Odbc.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\7.0.0\\runtimes/win/lib/net7.0/System.Data.OleDb.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\8.0.0\\runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\lib/net6.0/System.IdentityModel.Tokens.Jwt.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.memory.data\\6.0.0\\lib/net6.0/System.Memory.Data.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\8.0.0\\runtimes/win/lib/net8.0/System.Runtime.Caching.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Data.ConnectionUI.Dialog.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Database.Activities.Design.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Database.Activities.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Database.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib/net6.0-windows7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0"
     }
   ],
   "Conflicts": [],
   "ResolvedDependencies": {
+    "Azure.Core": {
+      "Id": "Azure.Core",
+      "Version": "1.44.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.ClientModel",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.DiagnosticSource",
+          "Item2": "[6.0.1, )"
+        },
+        {
+          "Item1": "System.Memory.Data",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[6.0.10, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "Azure.Identity": {
+      "Id": "Azure.Identity",
+      "Version": "1.13.1",
+      "Dependencies": [
+        {
+          "Item1": "Azure.Core",
+          "Item2": "[1.44.1, )"
+        },
+        {
+          "Item1": "Microsoft.Identity.Client",
+          "Item2": "[4.66.1, )"
+        },
+        {
+          "Item1": "Microsoft.Identity.Client.Extensions.Msal",
+          "Item2": "[4.66.1, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.5, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[6.0.10, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
     "ClosedXML": {
       "Id": "ClosedXML",
       "Version": "0.100.3",
@@ -373,7 +477,7 @@
     },
     "Microsoft.Bcl.AsyncInterfaces": {
       "Id": "Microsoft.Bcl.AsyncInterfaces",
-      "Version": "5.0.0",
+      "Version": "6.0.0",
       "Dependencies": []
     },
     "Microsoft.CodeAnalysis.Analyzers": {
@@ -438,6 +542,49 @@
     "Microsoft.CSharp": {
       "Id": "Microsoft.CSharp",
       "Version": "4.7.0",
+      "Dependencies": []
+    },
+    "Microsoft.Data.SqlClient": {
+      "Id": "Microsoft.Data.SqlClient",
+      "Version": "5.2.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Data.SqlClient.SNI.runtime",
+          "Item2": "[5.2.0, )"
+        },
+        {
+          "Item1": "Azure.Identity",
+          "Item2": "[1.11.3, )"
+        },
+        {
+          "Item1": "Microsoft.Identity.Client",
+          "Item2": "[4.60.3, )"
+        },
+        {
+          "Item1": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "Microsoft.IdentityModel.JsonWebTokens",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "Microsoft.SqlServer.Server",
+          "Item2": "[1.0.0, )"
+        },
+        {
+          "Item1": "System.Configuration.ConfigurationManager",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Caching",
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
+    "Microsoft.Data.SqlClient.SNI.runtime": {
+      "Id": "Microsoft.Data.SqlClient.SNI.runtime",
+      "Version": "5.2.0",
       "Dependencies": []
     },
     "Microsoft.Extensions.DependencyInjection": {
@@ -514,6 +661,117 @@
       "Id": "Microsoft.Extensions.Primitives",
       "Version": "6.0.1",
       "Dependencies": []
+    },
+    "Microsoft.Identity.Client": {
+      "Id": "Microsoft.Identity.Client",
+      "Version": "4.66.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.Abstractions",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.DiagnosticSource",
+          "Item2": "[6.0.1, )"
+        }
+      ]
+    },
+    "Microsoft.Identity.Client.Extensions.Msal": {
+      "Id": "Microsoft.Identity.Client.Extensions.Msal",
+      "Version": "4.66.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Identity.Client",
+          "Item2": "[4.66.1, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.ProtectedData",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "Microsoft.IdentityModel.Abstractions": {
+      "Id": "Microsoft.IdentityModel.Abstractions",
+      "Version": "6.35.0",
+      "Dependencies": []
+    },
+    "Microsoft.IdentityModel.JsonWebTokens": {
+      "Id": "Microsoft.IdentityModel.JsonWebTokens",
+      "Version": "6.35.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.Tokens",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[4.7.2, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[4.7.2, )"
+        }
+      ]
+    },
+    "Microsoft.IdentityModel.Logging": {
+      "Id": "Microsoft.IdentityModel.Logging",
+      "Version": "6.35.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.Abstractions",
+          "Item2": "[6.35.0, )"
+        }
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols": {
+      "Id": "Microsoft.IdentityModel.Protocols",
+      "Version": "6.35.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.Logging",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "Microsoft.IdentityModel.Tokens",
+          "Item2": "[6.35.0, )"
+        }
+      ]
+    },
+    "Microsoft.IdentityModel.Protocols.OpenIdConnect": {
+      "Id": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "Version": "6.35.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.Protocols",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "System.IdentityModel.Tokens.Jwt",
+          "Item2": "[6.35.0, )"
+        }
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens": {
+      "Id": "Microsoft.IdentityModel.Tokens",
+      "Version": "6.35.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.Logging",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Cng",
+          "Item2": "[4.5.0, )"
+        }
+      ]
     },
     "Microsoft.Management.Infrastructure": {
       "Id": "Microsoft.Management.Infrastructure",
@@ -774,6 +1032,11 @@
           "Item2": "[10.0.3, )"
         }
       ]
+    },
+    "Microsoft.SqlServer.Server": {
+      "Id": "Microsoft.SqlServer.Server",
+      "Version": "1.0.0",
+      "Dependencies": []
     },
     "Microsoft.VisualBasic": {
       "Id": "Microsoft.VisualBasic",
@@ -1256,6 +1519,24 @@
         }
       ]
     },
+    "Oracle.ManagedDataAccess.Core": {
+      "Id": "Oracle.ManagedDataAccess.Core",
+      "Version": "23.5.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Diagnostics.PerformanceCounter",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "System.DirectoryServices.Protocols",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Pkcs",
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
     "Portable.BouncyCastle": {
       "Id": "Portable.BouncyCastle",
       "Version": "1.8.9",
@@ -1542,6 +1823,20 @@
       "Version": "4.5.1",
       "Dependencies": []
     },
+    "System.ClientModel": {
+      "Id": "System.ClientModel",
+      "Version": "1.1.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory.Data",
+          "Item2": "[1.0.2, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[6.0.9, )"
+        }
+      ]
+    },
     "System.CodeDom": {
       "Id": "System.CodeDom",
       "Version": "6.0.0",
@@ -1642,15 +1937,15 @@
     },
     "System.Configuration.ConfigurationManager": {
       "Id": "System.Configuration.ConfigurationManager",
-      "Version": "6.0.1",
+      "Version": "8.0.0",
       "Dependencies": [
         {
-          "Item1": "System.Security.Cryptography.ProtectedData",
-          "Item2": "[6.0.0, )"
+          "Item1": "System.Diagnostics.EventLog",
+          "Item2": "[8.0.0, )"
         },
         {
-          "Item1": "System.Security.Permissions",
-          "Item2": "[6.0.0, )"
+          "Item1": "System.Security.Cryptography.ProtectedData",
+          "Item2": "[8.0.0, )"
         }
       ]
     },
@@ -1682,25 +1977,25 @@
     },
     "System.Data.Odbc": {
       "Id": "System.Data.Odbc",
-      "Version": "6.0.1",
+      "Version": "7.0.0",
       "Dependencies": [
         {
           "Item1": "System.Text.Encoding.CodePages",
-          "Item2": "[6.0.0, )"
+          "Item2": "[7.0.0, )"
         }
       ]
     },
     "System.Data.OleDb": {
       "Id": "System.Data.OleDb",
-      "Version": "6.0.0",
+      "Version": "7.0.0",
       "Dependencies": [
         {
           "Item1": "System.Configuration.ConfigurationManager",
-          "Item2": "[6.0.0, )"
+          "Item2": "[7.0.0, )"
         },
         {
           "Item1": "System.Diagnostics.PerformanceCounter",
-          "Item2": "[6.0.0, )"
+          "Item2": "[7.0.0, )"
         }
       ]
     },
@@ -1747,16 +2042,16 @@
     },
     "System.Diagnostics.EventLog": {
       "Id": "System.Diagnostics.EventLog",
-      "Version": "6.0.0",
+      "Version": "8.0.0",
       "Dependencies": []
     },
     "System.Diagnostics.PerformanceCounter": {
       "Id": "System.Diagnostics.PerformanceCounter",
-      "Version": "6.0.1",
+      "Version": "8.0.0",
       "Dependencies": [
         {
           "Item1": "System.Configuration.ConfigurationManager",
-          "Item2": "[6.0.0, )"
+          "Item2": "[8.0.0, )"
         }
       ]
     },
@@ -1834,7 +2129,7 @@
     },
     "System.DirectoryServices.Protocols": {
       "Id": "System.DirectoryServices.Protocols",
-      "Version": "6.0.2",
+      "Version": "8.0.0",
       "Dependencies": []
     },
     "System.Drawing.Common": {
@@ -1849,7 +2144,7 @@
     },
     "System.Formats.Asn1": {
       "Id": "System.Formats.Asn1",
-      "Version": "6.0.1",
+      "Version": "8.0.0",
       "Dependencies": []
     },
     "System.Globalization": {
@@ -1919,6 +2214,20 @@
         {
           "Item1": "System.Runtime.InteropServices",
           "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.IdentityModel.Tokens.Jwt": {
+      "Id": "System.IdentityModel.Tokens.Jwt",
+      "Version": "6.35.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.IdentityModel.JsonWebTokens",
+          "Item2": "[6.35.0, )"
+        },
+        {
+          "Item1": "Microsoft.IdentityModel.Tokens",
+          "Item2": "[6.35.0, )"
         }
       ]
     },
@@ -2337,6 +2646,16 @@
       "Version": "4.5.5",
       "Dependencies": []
     },
+    "System.Memory.Data": {
+      "Id": "System.Memory.Data",
+      "Version": "6.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[6.0.0, )"
+        }
+      ]
+    },
     "System.Net.Http": {
       "Id": "System.Net.Http",
       "Version": "4.3.4",
@@ -2726,6 +3045,11 @@
         }
       ]
     },
+    "System.Resources.Extensions": {
+      "Id": "System.Resources.Extensions",
+      "Version": "5.0.0",
+      "Dependencies": []
+    },
     "System.Resources.ResourceManager": {
       "Id": "System.Resources.ResourceManager",
       "Version": "4.3.0",
@@ -2768,11 +3092,11 @@
     },
     "System.Runtime.Caching": {
       "Id": "System.Runtime.Caching",
-      "Version": "6.0.0",
+      "Version": "8.0.0",
       "Dependencies": [
         {
           "Item1": "System.Configuration.ConfigurationManager",
-          "Item2": "[6.0.0, )"
+          "Item2": "[8.0.0, )"
         }
       ]
     },
@@ -2972,53 +3296,8 @@
     },
     "System.Security.Cryptography.Cng": {
       "Id": "System.Security.Cryptography.Cng",
-      "Version": "4.3.0",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.NETCore.Platforms",
-          "Item2": "[1.1.0, )"
-        },
-        {
-          "Item1": "System.IO",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Resources.ResourceManager",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.Extensions",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.Handles",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.InteropServices",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Security.Cryptography.Algorithms",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Security.Cryptography.Encoding",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Security.Cryptography.Primitives",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Text.Encoding",
-          "Item2": "[4.3.0, )"
-        }
-      ]
+      "Version": "4.5.0",
+      "Dependencies": []
     },
     "System.Security.Cryptography.Csp": {
       "Id": "System.Security.Cryptography.Csp",
@@ -3192,11 +3471,11 @@
     },
     "System.Security.Cryptography.Pkcs": {
       "Id": "System.Security.Cryptography.Pkcs",
-      "Version": "6.0.4",
+      "Version": "8.0.0",
       "Dependencies": [
         {
           "Item1": "System.Formats.Asn1",
-          "Item2": "[6.0.0, )"
+          "Item2": "[8.0.0, )"
         }
       ]
     },
@@ -3236,7 +3515,7 @@
     },
     "System.Security.Cryptography.ProtectedData": {
       "Id": "System.Security.Cryptography.ProtectedData",
-      "Version": "6.0.0",
+      "Version": "8.0.0",
       "Dependencies": []
     },
     "System.Security.Cryptography.X509Certificates": {
@@ -3484,13 +3763,8 @@
     },
     "System.Text.Encoding.CodePages": {
       "Id": "System.Text.Encoding.CodePages",
-      "Version": "6.0.0",
-      "Dependencies": [
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[6.0.0, )"
-        }
-      ]
+      "Version": "7.0.0",
+      "Dependencies": []
     },
     "System.Text.Encoding.Extensions": {
       "Id": "System.Text.Encoding.Extensions",
@@ -3520,6 +3794,20 @@
       "Dependencies": [
         {
           "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[6.0.0, )"
+        }
+      ]
+    },
+    "System.Text.Json": {
+      "Id": "System.Text.Json",
+      "Version": "6.0.10",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
           "Item2": "[6.0.0, )"
         }
       ]
@@ -3772,6 +4060,40 @@
         {
           "Item1": "System.ValueTuple",
           "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "UiPath.Database.Activities": {
+      "Id": "UiPath.Database.Activities",
+      "Version": "1.10.0",
+      "Dependencies": [
+        {
+          "Item1": "Azure.Identity",
+          "Item2": "[1.13.1, )"
+        },
+        {
+          "Item1": "Microsoft.Data.SqlClient",
+          "Item2": "[5.2.1, )"
+        },
+        {
+          "Item1": "Oracle.ManagedDataAccess.Core",
+          "Item2": "[23.5.0, )"
+        },
+        {
+          "Item1": "System.Activities.ViewModels",
+          "Item2": "[1.0.0-20230713.1, )"
+        },
+        {
+          "Item1": "System.Data.Odbc",
+          "Item2": "[7.0.0, )"
+        },
+        {
+          "Item1": "System.Data.OleDb",
+          "Item2": "[7.0.0, )"
+        },
+        {
+          "Item1": "System.Resources.Extensions",
+          "Item2": "[5.0.0, )"
         }
       ]
     },
@@ -4080,6 +4402,26 @@
   "AllPackages": [
     {
       "Package": {
+        "Id": "Azure.Core",
+        "Version": "1.44.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\azure.core\\1.44.1\\lib\\net6.0\\Azure.Core.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\azure.core\\1.44.1"
+    },
+    {
+      "Package": {
+        "Id": "Azure.Identity",
+        "Version": "1.13.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\azure.identity\\1.13.1\\lib\\netstandard2.0\\Azure.Identity.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\azure.identity\\1.13.1"
+    },
+    {
+      "Package": {
         "Id": "ClosedXML",
         "Version": "0.100.3"
       },
@@ -4241,12 +4583,12 @@
     {
       "Package": {
         "Id": "Microsoft.Bcl.AsyncInterfaces",
-        "Version": "5.0.0"
+        "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0"
     },
     {
       "Package": {
@@ -4295,6 +4637,24 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.csharp\\4.7.0\\lib\\netcoreapp2.0\\_._"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.csharp\\4.7.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Data.SqlClient",
+        "Version": "5.2.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1\\runtimes\\win\\lib\\net8.0\\Microsoft.Data.SqlClient.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Data.SqlClient.SNI.runtime",
+        "Version": "5.2.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.2.0"
     },
     {
       "Package": {
@@ -4375,6 +4735,86 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Identity.Client",
+        "Version": "4.66.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identity.client\\4.66.1\\lib\\net6.0\\Microsoft.Identity.Client.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identity.client\\4.66.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Identity.Client.Extensions.Msal",
+        "Version": "4.66.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.66.1\\lib\\net6.0\\Microsoft.Identity.Client.Extensions.Msal.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.66.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.IdentityModel.Abstractions",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\lib\\net6.0\\Microsoft.IdentityModel.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.IdentityModel.JsonWebTokens",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0\\lib\\net6.0\\Microsoft.IdentityModel.JsonWebTokens.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.IdentityModel.Logging",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0\\lib\\net6.0\\Microsoft.IdentityModel.Logging.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.logging\\6.35.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.IdentityModel.Protocols",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\lib\\net6.0\\Microsoft.IdentityModel.Protocols.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\lib\\net6.0\\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.IdentityModel.Tokens",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0\\lib\\net6.0\\Microsoft.IdentityModel.Tokens.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.35.0"
     },
     {
       "Package": {
@@ -4541,6 +4981,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.SqlServer.Server",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\lib\\netstandard2.0\\Microsoft.SqlServer.Server.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.VisualBasic",
         "Version": "10.3.0"
       },
@@ -4679,12 +5129,22 @@
         "Version": "2.5.6"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib\\netstandard2.1\\NPOI.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib\\netstandard2.1\\NPOI.OOXML.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib\\netstandard2.1\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6\\lib\\netstandard2.1\\NPOI.dll"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\npoi\\2.5.6"
+    },
+    {
+      "Package": {
+        "Id": "Oracle.ManagedDataAccess.Core",
+        "Version": "23.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\oracle.manageddataaccess.core\\23.5.0\\lib\\netstandard2.1\\Oracle.ManagedDataAccess.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\oracle.manageddataaccess.core\\23.5.0"
     },
     {
       "Package": {
@@ -5216,6 +5676,16 @@
     },
     {
       "Package": {
+        "Id": "System.ClientModel",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.clientmodel\\1.1.0\\lib\\net6.0\\System.ClientModel.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.clientmodel\\1.1.0"
+    },
+    {
+      "Package": {
         "Id": "System.CodeDom",
         "Version": "6.0.0"
       },
@@ -5275,12 +5745,12 @@
     {
       "Package": {
         "Id": "System.Configuration.ConfigurationManager",
-        "Version": "6.0.1"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\lib\\net6.0\\System.Configuration.ConfigurationManager.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\lib\\net8.0\\System.Configuration.ConfigurationManager.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0"
     },
     {
       "Package": {
@@ -5293,22 +5763,22 @@
     {
       "Package": {
         "Id": "System.Data.Odbc",
-        "Version": "6.0.1"
+        "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\6.0.1\\runtimes\\win\\lib\\net6.0\\System.Data.Odbc.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\7.0.0\\runtimes\\win\\lib\\net7.0\\System.Data.Odbc.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\6.0.1"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.data.odbc\\7.0.0"
     },
     {
       "Package": {
         "Id": "System.Data.OleDb",
-        "Version": "6.0.0"
+        "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Data.OleDb.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\7.0.0\\runtimes\\win\\lib\\net7.0\\System.Data.OleDb.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\6.0.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.data.oledb\\7.0.0"
     },
     {
       "Package": {
@@ -5341,23 +5811,23 @@
     {
       "Package": {
         "Id": "System.Diagnostics.EventLog",
-        "Version": "6.0.0"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.Messages.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.Diagnostics.EventLog.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.Diagnostics.EventLog.Messages.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0"
     },
     {
       "Package": {
         "Id": "System.Diagnostics.PerformanceCounter",
-        "Version": "6.0.1"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.1\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.PerformanceCounter.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.performancecounter\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.Diagnostics.PerformanceCounter.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.performancecounter\\6.0.1"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.diagnostics.performancecounter\\8.0.0"
     },
     {
       "Package": {
@@ -5398,12 +5868,12 @@
     {
       "Package": {
         "Id": "System.DirectoryServices.Protocols",
-        "Version": "6.0.2"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2\\runtimes\\win\\lib\\net6.0\\System.DirectoryServices.Protocols.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.DirectoryServices.Protocols.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\6.0.2"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.directoryservices.protocols\\8.0.0"
     },
     {
       "Package": {
@@ -5418,12 +5888,12 @@
     {
       "Package": {
         "Id": "System.Formats.Asn1",
-        "Version": "6.0.1"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.formats.asn1\\6.0.1\\lib\\net6.0\\System.Formats.Asn1.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.formats.asn1\\8.0.0\\lib\\net8.0\\System.Formats.Asn1.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.formats.asn1\\6.0.1"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.formats.asn1\\8.0.0"
     },
     {
       "Package": {
@@ -5450,6 +5920,16 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\system.globalization.extensions\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Globalization.Extensions.dll"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.globalization.extensions\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IdentityModel.Tokens.Jwt",
+        "Version": "6.35.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0\\lib\\net6.0\\System.IdentityModel.Tokens.Jwt.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.35.0"
     },
     {
       "Package": {
@@ -5596,6 +6076,16 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\system.memory\\4.5.5\\lib\\netcoreapp2.1\\_._"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.memory\\4.5.5"
+    },
+    {
+      "Package": {
+        "Id": "System.Memory.Data",
+        "Version": "6.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.memory.data\\6.0.0\\lib\\net6.0\\System.Memory.Data.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.memory.data\\6.0.0"
     },
     {
       "Package": {
@@ -5777,6 +6267,16 @@
     },
     {
       "Package": {
+        "Id": "System.Resources.Extensions",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.resources.extensions\\5.0.0\\lib\\netstandard2.0\\System.Resources.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.resources.extensions\\5.0.0"
+    },
+    {
+      "Package": {
         "Id": "System.Resources.ResourceManager",
         "Version": "4.3.0"
       },
@@ -5794,12 +6294,12 @@
     {
       "Package": {
         "Id": "System.Runtime.Caching",
-        "Version": "6.0.0"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Runtime.Caching.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.Runtime.Caching.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\6.0.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.runtime.caching\\8.0.0"
     },
     {
       "Package": {
@@ -5878,12 +6378,12 @@
     {
       "Package": {
         "Id": "System.Security.Cryptography.Cng",
-        "Version": "4.3.0"
+        "Version": "4.5.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.cng\\4.3.0\\runtimes\\win\\lib\\netstandard1.6\\System.Security.Cryptography.Cng.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\runtimes\\win\\lib\\netcoreapp2.1\\System.Security.Cryptography.Cng.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.cng\\4.3.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0"
     },
     {
       "Package": {
@@ -5918,12 +6418,12 @@
     {
       "Package": {
         "Id": "System.Security.Cryptography.Pkcs",
-        "Version": "6.0.4"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.Pkcs.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.Security.Cryptography.Pkcs.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0"
     },
     {
       "Package": {
@@ -5938,12 +6438,12 @@
     {
       "Package": {
         "Id": "System.Security.Cryptography.ProtectedData",
-        "Version": "6.0.0"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Security.Cryptography.ProtectedData.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\lib\\net8.0\\System.Security.Cryptography.ProtectedData.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0"
     },
     {
       "Package": {
@@ -6077,12 +6577,12 @@
     {
       "Package": {
         "Id": "System.Text.Encoding.CodePages",
-        "Version": "6.0.0"
+        "Version": "7.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\OMEN\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Text.Encoding.CodePages.dll"
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\runtimes\\win\\lib\\net7.0\\System.Text.Encoding.CodePages.dll"
       ],
-      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0"
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0"
     },
     {
       "Package": {
@@ -6101,6 +6601,16 @@
         "C:\\Users\\OMEN\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\lib\\net6.0\\System.Text.Encodings.Web.dll"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.text.encodings.web\\6.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Text.Json",
+        "Version": "6.0.10"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\system.text.json\\6.0.10\\lib\\net6.0\\System.Text.Json.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\system.text.json\\6.0.10"
     },
     {
       "Package": {
@@ -6250,15 +6760,28 @@
     },
     {
       "Package": {
+        "Id": "UiPath.Database.Activities",
+        "Version": "1.10.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib\\net6.0-windows7.0\\UiPath.Data.ConnectionUI.Dialog.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib\\net6.0-windows7.0\\UiPath.Database.Activities.Design.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib\\net6.0-windows7.0\\UiPath.Database.Activities.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0\\lib\\net6.0-windows7.0\\UiPath.Database.dll"
+      ],
+      "Path": "C:\\Users\\OMEN\\.nuget\\packages\\uipath.database.activities\\1.10.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.24.4"
       },
       "Assemblies": [
         "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.API.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.Package.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.ViewModels.dll",
+        "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4\\lib\\net6.0-windows7.0\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\OMEN\\.nuget\\packages\\uipath.excel.activities\\2.24.4"

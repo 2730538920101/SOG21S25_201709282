@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="roFVC4ZPLEWyjZZMG3kc9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="fedfc4af-5d5f-497d-9ae8-d38e9d10605a" CvElementArea="854, 369, 320, 53" CvType="InputBox" DesignTimeRectangle="1144, 387, 18, 16" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='mat-select-arrow-wrapper ng-tns-c78-7' parentid='aggregatedPriceSelector' tag='DIV' aaname='' /&gt;" Guid="2224c61e-1192-4581-a7da-beadca90e9a3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fedfc4af-5d5f-497d-9ae8-d38e9d10605a" CvElementArea="854, 369, 320, 53" CvType="InputBox" DesignTimeRectangle="868, 386, 294, 18" FuzzySelectorArgument="&lt;webctrl type='' class='mat-form-field-infix ng-tns-c67-6' tag='DIV' aaname='' check:innerText='0- Cualquiera' /&gt;" Guid="6d993829-b6bf-45b7-bfa4-15ae8fdf2fe6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9f7b2ee313604d8aae71201f7e5792cd.png" xmlns="">0l5BuILk_iEWyK0F_djU9rw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

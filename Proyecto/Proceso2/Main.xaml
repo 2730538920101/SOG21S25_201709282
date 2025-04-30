@@ -1,0 +1,391 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>UiPath.Workflow.Runtime.Statements</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Text</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
+      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
+      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1556,2144" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="TablaDatosExtraidos" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,2121" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="50fb456a-c088-425e-9873-2acac96e90d6">
+      <uix:NApplicationCard.AutoGenerationOptions>
+        <uix:GenerationOptions ExpectedInputs="{x:Null}" Prompt="{x:Null}" Url="{x:Null}">
+          <uix:GenerationOptions.ExpectedOutputs>
+            <scg:List x:TypeArguments="x:String" Capacity="4">
+              <x:Null />
+            </scg:List>
+          </uix:GenerationOptions.ExpectedOutputs>
+        </uix:GenerationOptions>
+      </uix:NApplicationCard.AutoGenerationOptions>
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,1881" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Abrir filtro de precios" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="50fb456a-c088-425e-9873-2acac96e90d6" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="20315d97-f587-4100-b180-9c3d117201bf" ContentHash="GaR_NRuhNUWdPXUl_cb9lQ" CvElementArea="854, 369, 320, 53" CvType="InputBox" DesignTimeRectangle="868, 386, 276, 18" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl id='mat-select-value-5' tag='DIV' type='' class='mat-select-value ng-tns-c78-7' aaname='' check:innerText='0- Cualquiera' /&gt;" Guid="b74b9370-83a9-4c24-81b8-9f3bdd8eae3b" InformativeScreenshot="8106c9c439b80d31bb46acd1dad87486.png" Reference="3vof5J1yv0yhjbVK4oVBDw/NrDddAEfU0-PWnhXeM0SpQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Máx (USD)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="50fb456a-c088-425e-9873-2acac96e90d6" Text="800000" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="edb31798-eb21-4407-bc38-f8ce9a3c4f59" ContentHash="bWjZNcrJZUmYAxudzi0PxQ" CvElementArea="1002, 413, 130, 53" CvType="InputBox" DesignTimeRectangle="1015, 431, 103, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='priceTo' tag='INPUT' type='number' class='mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger ng-tns-c67-9 ng-untouched ng-pristine ng-valid cdk-text-field-autofill-monitored' placeholder='A' aaname='Máx (USD) ' /&gt;" Guid="6901a458-4b72-4419-9f28-a0d5ddcd307a" InformativeScreenshot="c810ef234d8f93373a79cabf3ff8fe9c.png" Reference="3vof5J1yv0yhjbVK4oVBDw/LhNf1DcXqEuuzZ2gP_Lj_A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="edb31798-eb21-4407-bc38-f8ce9a3c4f59" CvTextArea="1002, 392, 66, 15" CvTextArgument="Máx (USD)" CvType="Text" DesignTimeRectangle="1003, 391, 68, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='aggregatedPriceSelector-panel' tag='LABEL' class='mat-small' aaname='' check:innerText='Máx (USD)' /&gt;" Guid="72e4a706-de4a-4553-88b5-071b6e70ac24" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Estados Unidos Bienes R…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="50fb456a-c088-425e-9873-2acac96e90d6" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="df857507-9dcd-4108-83e6-660c12e15829" ContentHash="xjRtRrJMBUiNFmwedzeSLQ" CvTextArea="312, 542, 512, 23" CvTextArgument="Estados Unidos Bienes Raíces Y Tierras En Venta" CvType="Text" DesignTimeRectangle="312, 542, 513, 22" DesignTimeScaleFactor="1" ElementType="Text" Guid="126b6295-ce70-4c61-9d9c-a3ee08bead8d" InformativeScreenshot="9bd564be1c550de2f52c70a79eaa502c.png" Reference="3vof5J1yv0yhjbVK4oVBDw/0LnCeNT4LUSzz73HDrYA4g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[TablaDatosExtraidos]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Precio'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Ubicacion'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Direccion'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Titulo'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='site-property-thumbnail' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='site-property-thumbnail' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='site-property-thumbnail' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='address' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='site-property-thumbnail' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='address' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='site-property-thumbnail' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="50fb456a-c088-425e-9873-2acac96e90d6" Version="V4">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="def9708c-f940-436b-863b-447fcb2ad2ed" CvElementArea="1578, 624, 21, 23" CvType="ArrowButton" DesignTimeRectangle="1577, 623, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='  ' css-selector='body&amp;gt;site-root&amp;gt;site-master&amp;gt;xo-builder-listing-search-page&amp;gt;site-master-page&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;xo-builder-listing-search-result&amp;gt;xo-builder-custom-paginator&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;span&amp;gt;mat-icon&amp;gt;svg' idx='4' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  ' type='' class='' tag='svg' /&gt;" Guid="ba091fd7-6169-40dc-ba93-345400b54808" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.century21global.com/es/l/land-for-sale/usa?max=10&amp;priceTo=800000&amp;sort=PRICE&amp;order=DESC" ContentHash="RydrDp44V0iihNjL0jZ7zg" DesignTimeRectangle="301, -800, 1320, 1640" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;site-root&amp;gt;site-master&amp;gt;xo-builder-listing-search-page&amp;gt;site-master-page&amp;gt;mat-sidenav-container&amp;gt;mat-sidenav-content&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;xo-builder-listing-search-result&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="c103f285-40f6-4d81-ace6-fff1c481c9c1" InformativeScreenshot="6be05e4475515f576863e44675408436.png" Reference="3vof5J1yv0yhjbVK4oVBDw/FVrjkPoiK0eawyoU3XI_xA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Proceso2__ProyectoSOG" BrowserItemId="https://docs.google.com/spreadsheets/d/1Kh1d2I4u55EA2YU7E_rzn_bLXakTVmIHHf7SwUodXUU/edit?usp=drivesdk" ConnectionId="a1fe8993-4bb7-4388-84b3-da7087c2056d" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="True" ItemSelectionMode="Browse" Range="'Hoja 1'" RowPosition="0" Source="[TablaDatosExtraidos]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
+              <uga:WriteRangeConnections.FileIdBackup>
+                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRangeConnections.FileIdBackup>
+              <uga:WriteRangeConnections.Item>
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://docs.google.com/spreadsheets/d/1Kh1d2I4u55EA2YU7E_rzn_bLXakTVmIHHf7SwUodXUU/edit?usp=drivesdk" ConnectionKey="a1fe8993-4bb7-4388-84b3-da7087c2056d" FriendlyName="Proceso2__ProyectoSOG" FullPathHint="My Drive/Proceso2__ProyectoSOG" InputMode="Browse">
+                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                </ugam:DriveItemArgument>
+              </uga:WriteRangeConnections.Item>
+              <uga:WriteRangeConnections.RangeWriteModeBackup>
+                <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:WriteRangeConnections.RangeWriteModeBackup>
+            </uga:WriteRangeConnections>
+            <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Adjunto informacion sobre los terrenos encontrados en internet para la bodega de la empresa, tomando en cuenta el presupuesto:&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;https://docs.google.com/spreadsheets/d/1Kh1d2I4u55EA2YU7E_rzn_bLXakTVmIHHf7SwUodXUU/edit?usp=sharing&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;/P&gt;&quot;)]" ConnectionId="4a959683-acbe-4acc-8c65-2affdfc5150b" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,502" sap2010:WorkflowViewState.IdRef="SendEmailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="autorizados-registrocontabilidad" To="[New String(){&quot;carlosmartz1995@gmail.com&quot;}]" UseConnectionService="True">
+              <uga:SendEmailConnections.Attachments>
+                <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
+              </uga:SendEmailConnections.Attachments>
+              <uga:SendEmailConnections.AttachmentsBackup>
+                <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:SendEmailConnections.AttachmentsBackup>
+              <uga:SendEmailConnections.InputTypeBackup>
+                <usau:BackupSlot x:TypeArguments="ugage:BodyInputType" StoredValue="HTML">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="ugage:BodyInputType, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </uga:SendEmailConnections.InputTypeBackup>
+            </uga:SendEmailConnections>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="25cKA8ztNkOTgN9QmbUdTA" IconBase64="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" InformativeScreenshot="f7905d3390f0720cf0754d0616621618.jpg" Reference="3vof5J1yv0yhjbVK4oVBDw/q4sAglgZe0KVtTp8JB03aQ" Selector="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" Url="https://www.century21global.com/es/l/land-for-sale/usa" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

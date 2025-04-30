@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xjRtRrJMBUiNFmwedzeSLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="century21global.com/es/l/land-for-sale/usa" CVScreenId="df857507-9dcd-4108-83e6-660c12e15829" CvTextArea="312, 542, 512, 23" CvTextArgument="Estados Unidos Bienes Raíces Y Tierras En Venta" CvType="Text" DesignTimeRectangle="312, 542, 513, 22" DesignTimeScaleFactor="1" ElementType="Text" Guid="126b6295-ce70-4c61-9d9c-a3ee08bead8d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Estados Unidos Bienes raíces y Tierras en Venta | Century 21®' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9bd564be1c550de2f52c70a79eaa502c.png" xmlns="">0uqnOttdAV0eC34qief7_Uw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
